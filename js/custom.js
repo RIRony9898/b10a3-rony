@@ -9,10 +9,10 @@ tailwind.config = {
           'dark-secondary': '#494949',
           'dark-special': '#1C1C1C',
           'gray': '#737373',
-          'pink': '#E7C1D3',
-          'yellow': '#EFDA6E',
-          'pest': '#A4DAC3',
-          'sky': '#77AAEA',
+          'card-pink': '#E7C1D3',
+          'card-yellow': '#EFDA6E',
+          'card-pest': '#A4DAC3',
+          'card-sky': '#77AAEA',
           'white': '#FFFFFF',
         }
       }

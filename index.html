@@ -45,6 +45,7 @@
               <h3 class="text-3xl font-extrabold">Rinterio</h3>
             </a>
           </div>
+          <!-- NavBar on large device -->
           <div class="navbar-center hidden lg:flex">
             <ul
               class="menu menu-horizontal px-1 text-base font-normal text-gray"
@@ -117,8 +118,10 @@
               </svg>
             </a>
             <!-- Dropdown button -->
-            <div class="dropdown bg-dark-primary text-white rounded-full lg:hidden">
-              <div tabindex="0" role="button" class="btn btn-ghost ">
+            <div
+              class="dropdown bg-dark-primary text-white rounded-full lg:hidden"
+            >
+              <div tabindex="0" role="button" class="btn btn-ghost">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="size-10 p-2"
@@ -206,11 +209,11 @@
     <!-- ============================== -->
 
     <!-- Main section start -->
-    <main class="container mx-auto mt-28 border-2 border-red-500">
+    <main class="mt-28 border-2 border-red-500 bg-[#f4f4f4]">
       <!-- About us section start -->
       <section
         id="about-us"
-        class="flex flex-col lg:flex-row justify-end gap-9 border-2 border-green-500 sm:px-5 md:px-8 lg:px-0 bg-[#f4f4f4] pt-8 md:pt-16 lg:pt-24"
+        class="flex flex-col lg:flex-row justify-end gap-9 border-2 border-green-500 sm:px-5 md:px-8 lg:px-0 bg-[#f4f4f4] pt-8 md:pt-16 lg:pt-24 container mx-auto"
       >
         <!-- about us left -->
         <div class="about-us-content flex-1 space-y-6">
@@ -219,11 +222,13 @@
             class="section-title-container flex flex-col justify-center items-center text-center lg:text-left lg:items-start gap-4 relative"
           >
             <!-- About us section indicator button -->
-             <div class="about-us-btn-indicator hidden lg:inline-block absolute -left-12 -top-14">
-              <img src="assets/about-us-section-indicator.png" alt="">
-             </div>
+            <div
+              class="about-us-btn-indicator hidden lg:inline-block absolute -left-12 -top-14"
+            >
+              <img src="assets/about-us-section-indicator.png" alt="" />
+            </div>
             <button
-              class="btn bg-white text-dark-secondary text-base font-bold"
+              class="btn bg-white text-dark-secondary text-base font-bold rounded-3xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -290,22 +295,575 @@
 
       <!-- -------------------------- -->
 
-      <!-- Count section start -->
-      <!-- Count section end -->
+      <!-- State section start -->
+      <section
+        id="state"
+        class="border-2 border-green-500 sm:px-5 md:px-8 lg:px-0 bg-[#f4f4f4] container mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 md:mt-16 lg:mt-24 rounded-2xl bg-white p-8"
+        >
+          <!-- card - 1 -->
+          <div class="card flex justify-center items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-gray"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+              />
+            </svg>
+            <h2 class="card-title text-xl font-bold text-dark-secondary">
+              235+
+            </h2>
+            <p class="text-base font-medium text-gray">Happy Client Review</p>
+          </div>
+          <!-- card - 2 -->
+          <div class="card flex justify-center items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-gray"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+              />
+            </svg>
+
+            <h2 class="card-title text-xl font-bold text-dark-secondary">
+              235+
+            </h2>
+            <p class="text-base font-medium text-gray">Happy Client Review</p>
+          </div>
+          <!-- card - 3 -->
+          <div class="card flex justify-center items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-gray"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+              />
+            </svg>
+
+            <h2 class="card-title text-xl font-bold text-dark-secondary">
+              235+
+            </h2>
+            <p class="text-base font-medium text-gray">Happy Client Review</p>
+          </div>
+          <!-- card - 4 -->
+          <div class="card flex justify-center items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-gray"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+              />
+            </svg>
+
+            <h2 class="card-title text-xl font-bold text-dark-secondary">
+              235+
+            </h2>
+            <p class="text-base font-medium text-gray">Happy Client Review</p>
+          </div>
+        </div>
+      </section>
+      <!-- State section end -->
 
       <!-- -------------------------- -->
 
       <!-- Work process section start -->
+      <section id="work-process" class="pt-24 container mx-auto">
+        <!-- Section title container -->
+        <div
+          class="section-title-container flex flex-col justify-center items-center gap-4"
+        >
+          <button
+            class="btn bg-white text-dark-secondary text-base font-bold rounded-3xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+            How we works
+          </button>
+          <h2 class="text-4xl font-bold text-dark-primary">
+            Our Works Process
+          </h2>
+          <p class="text-base font-medium text-dark-secondary">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 gap-6">
+          <!-- Card - 1 -->
+          <div
+            class="card inline-flex items-start bg-card-pink p-6 rounded-2xl space-y-2.5"
+          >
+            <figure>
+              <img src="assets/work-process-1.png" alt="Work process 1" />
+            </figure>
+            <h3
+              class="text-xl font-extrabold leading-relaxed text-dark-special"
+            >
+              Concept
+            </h3>
+            <p
+              class="w-full text-base font-medium leading-relaxed text-dark-secondary"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- Card - 2 -->
+          <div
+            class="card inline-flex items-start bg-card-yellow p-6 rounded-2xl space-y-2.5"
+          >
+            <figure>
+              <img src="assets/work-process-2.png" alt="Work process 2" />
+            </figure>
+            <h3
+              class="text-xl font-extrabold leading-relaxed text-dark-special"
+            >
+              Concept
+            </h3>
+            <p
+              class="w-full text-base font-medium leading-relaxed text-dark-secondary"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- Card - 3 -->
+          <div
+            class="card inline-flex items-start bg-card-pest p-6 rounded-2xl space-y-2.5"
+          >
+            <figure>
+              <img src="assets/work-process-3.png" alt="Work process 3" />
+            </figure>
+            <h3
+              class="text-xl font-extrabold leading-relaxed text-dark-special"
+            >
+              Concept
+            </h3>
+            <p
+              class="w-full text-base font-medium leading-relaxed text-dark-secondary"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- Card - 4 -->
+          <div
+            class="card inline-flex items-start bg-card-sky p-6 rounded-2xl space-y-2.5"
+          >
+            <figure>
+              <img src="assets/work-process-4.png" alt="Work process 4" />
+            </figure>
+            <h3
+              class="text-xl font-extrabold leading-relaxed text-dark-special"
+            >
+              Concept
+            </h3>
+            <p
+              class="w-full text-base font-medium leading-relaxed text-dark-secondary"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- Work process section end -->
 
       <!-- -------------------------- -->
 
       <!-- Latest work section start -->
+      <section id="work-process" class="pt-24 container mx-auto">
+        <!-- Section title container -->
+        <div
+          class="section-title-container flex flex-col justify-center items-center gap-4"
+        >
+          <button
+            class="btn bg-green-primary bg-opacity-20 text-dark-secondary text-base font-bold rounded-3xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+            Explore our Latest works
+          </button>
+          <h2 class="text-4xl font-bold text-dark-primary">
+            Our Latest Portfolio
+          </h2>
+          <p class="text-base font-medium text-dark-secondary">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+      </section>
       <!-- Latest work section end -->
 
       <!-- -------------------------- -->
 
       <!-- Article and news section start -->
+      <section id="article-news" class="pt-24 container mx-auto">
+        <!-- Section title container -->
+        <div
+          class="section-title-container flex flex-col justify-center items-center gap-4"
+        >
+          <button
+            class="btn bg-green-primary bg-opacity-20 text-dark-secondary text-base font-bold rounded-3xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+            Rinterio News
+          </button>
+          <h2 class="text-4xl font-bold text-dark-primary">
+            Read Our Articles and News
+          </h2>
+          <p class="text-base font-medium text-dark-secondary">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Article & news cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8">
+          <!-- Article & news card - 1 -->
+          <div
+            class="inline-flex items-center justify-start rounded-2xl bg-white p-6"
+          >
+            <div
+              class="inline-flex flex-1 flex-col md:flex-row lg:flex-col gap-4 items-start justify-start"
+            >
+              <img
+                class="h-auto w-full rounded-2xl"
+                src="assets/article1.png"
+                alt="article-news-1"
+              />
+              <div
+                class="flex w-full flex-col items-start justify-start space-y-2"
+              >
+                <div class="inline-flex items-center justify-start space-x-3">
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">
+                      July14, 2024
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">By Admin</p>
+                  </div>
+                </div>
+                <h3
+                  class="w-full text-xl font-extrabold text-gray-700"
+                >
+                  How to choose the furniture right of your home.
+              </h3>
+                <div
+                  class="flex w-full flex-col items-start justify-start space-y-3"
+                >
+                  <p
+                    class="text-base font-medium text-gray"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                  <div class="inline-flex items-center justify-start space-x-2">
+                    <p class="text-lg font-bold text-dark-primary">
+                      Read More
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-9 bg-green-primary rounded-full p-2.5 text-dark-special"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article & news card - 2 -->
+          <div
+            class="inline-flex items-center justify-start rounded-2xl bg-white p-6"
+          >
+            <div
+              class="inline-flex flex-1 flex-col md:flex-row lg:flex-col gap-4 items-start justify-start"
+            >
+              <img
+                class="h-auto w-full rounded-2xl"
+                src="assets/article2.png"
+                alt="article-news-2"
+              />
+              <div
+                class="flex w-full flex-col items-start justify-start space-y-2"
+              >
+                <div class="inline-flex items-center justify-start space-x-3">
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">
+                      July14, 2024
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">By Admin</p>
+                  </div>
+                </div>
+                <h3
+                  class="w-full text-xl font-extrabold text-gray-700"
+                >
+                  How to choose the furniture right of your home.
+              </h3>
+                <div
+                  class="flex w-full flex-col items-start justify-start space-y-3"
+                >
+                  <p
+                    class="text-base font-medium text-gray"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                  <div class="inline-flex items-center justify-start space-x-2">
+                    <p class="text-lg font-bold text-dark-primary">
+                      Read More
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-9 bg-green-primary rounded-full p-2.5 text-dark-special"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article & news card - 3 -->
+          <div
+            class="inline-flex items-center justify-start rounded-2xl bg-white p-6"
+          >
+            <div
+              class="inline-flex flex-1 flex-col md:flex-row lg:flex-col gap-4 items-start justify-start"
+            >
+              <img
+                class="h-auto w-full rounded-2xl"
+                src="assets/article3.png"
+                alt="article-news-3"
+              />
+              <div
+                class="flex w-full flex-col items-start justify-start space-y-2"
+              >
+                <div class="inline-flex items-center justify-start space-x-3">
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">
+                      July14, 2024
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-start space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-gray"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+
+                    <p class="text-sm font-medium text-gray">By Admin</p>
+                  </div>
+                </div>
+                <h3
+                  class="w-full text-xl font-extrabold text-gray-700"
+                >
+                  How to choose the furniture right of your home.
+              </h3>
+                <div
+                  class="flex w-full flex-col items-start justify-start space-y-3"
+                >
+                  <p
+                    class="text-base font-medium text-gray"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                  <div class="inline-flex items-center justify-start space-x-2">
+                    <p class="text-lg font-bold text-dark-primary">
+                      Read More
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-9 bg-green-primary rounded-full p-2.5 text-dark-special"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Article and news section end -->
 
       <!-- -------------------------- -->
